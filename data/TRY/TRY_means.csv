@@ -1,0 +1,183 @@
+AccSpeciesName,OrigUnitStr,"Leaf area (in case of compound leaves: leaflet, petiole excluded)",Leaf carbon (C) content per leaf dry mass,Leaf carbon/nitrogen (C/N) ratio,Leaf phenols content per leaf dry mass,Leaf sugar content per leaf dry mass
+Acer buergerianum,m2,0.004206075,NA,NA,NA,NA
+Acer campestre,mm2,3966.2,NA,NA,NA,NA
+Acer negundo,cm2,26.811,NA,NA,NA,NA
+Acer platanoides,mm2,7628.58967032967,NA,NA,NA,NA
+Acer rubrum,cm2,49.092,NA,NA,NA,NA
+Acer saccharum,cm2,48.34516,NA,NA,NA,NA
+Aesculus hippocastanum,mm2,6467.876,NA,NA,NA,NA
+Ligustrum lucidum,m2,0.0014408333333333332,NA,NA,NA,NA
+Ligustrum sinense,m2,0.001334,NA,NA,NA,NA
+Ligustrum vulgare,mm2,553.781337535014,NA,NA,NA,NA
+Liriodendron tulipifera,cm2,112.8,NA,NA,NA,NA
+Lonicera hispidula var. vacillans,cm2,6.28,NA,NA,NA,NA
+Lonicera involucrata,cm2,28.855245161290323,NA,NA,NA,NA
+Lonicera japonica,m2,7.72e-4,NA,NA,NA,NA
+Lonicera maackii,m2,0.0034684000000000004,NA,NA,NA,NA
+Maackia amurensis,m2,0.0020458,NA,NA,NA,NA
+Magnolia grandiflora,cm2,43.15976666666667,NA,NA,NA,NA
+Morus alba,m2,0.0013,NA,NA,NA,NA
+Osmanthus fragrans,m2,0.0029348000000000004,NA,NA,NA,NA
+Ostrya virginiana,cm2,28.15878,NA,NA,NA,NA
+Picea abies,mm2,22.2,NA,NA,NA,NA
+Populus alba,cm2,20.522166666666667,NA,NA,NA,NA
+Populus fremontii,cm2,30.196466666666666,NA,NA,NA,NA
+Populus nigra,mm2,2797.9,NA,NA,NA,NA
+Populus tremuloides,cm2,12.583595381715362,NA,NA,NA,NA
+Prunus cerasus,mm2,2531.226,NA,NA,NA,NA
+Prunus laurocerasus,mm2,5791.278429951691,NA,NA,NA,NA
+Prunus serotina,mm2,3594.96,NA,NA,NA,NA
+Abies concolor,%,NA,48.27592222222222,NA,NA,NA
+Acer buergerianum,%,NA,39.355595965999996,NA,NA,NA
+Acer buergerianum,g/kg,NA,393.5559548313772,NA,NA,NA
+Acer campestre,%,NA,45.77520959432807,NA,NA,NA
+Acer campestre,g/100g,NA,45.87,NA,NA,NA
+Acer campestre,mg/g,NA,470.48,NA,NA,NA
+Acer leucoderme,%,NA,48.914,NA,NA,NA
+Acer negundo,%,NA,44.7107314124627,NA,NA,NA
+Acer negundo,mg/g,NA,472.56,NA,NA,NA
+Acer pensylvanicum,%,NA,46.95852582159625,NA,NA,NA
+Acer pensylvanicum,mg/g dry mass,NA,471.4461581920904,NA,0.6588633436034621,NA
+Acer pensylvanicum,percent,NA,48.567,NA,NA,NA
+Acer platanoides,%,NA,48.2,NA,NA,NA
+Acer platanoides,(mg g-1),NA,482,NA,NA,NA
+Acer rubrum,%,NA,48.7006447706422,NA,NA,NA
+Acer rubrum,percent,NA,49.77684375,NA,NA,NA
+Acer saccharinum,percent,NA,49.01016666666667,NA,NA,NA
+Acer saccharum,%,NA,47.797333333333334,NA,NA,NA
+Acer saccharum,mg/g dry mass,NA,478.9790049751244,NA,1.300302939165321,NA
+Acer spicatum,%,NA,45.7899,NA,NA,NA
+Acer spicatum,percent,NA,48.917,NA,NA,NA
+Aesculus flava,%,NA,45.52125,NA,NA,NA
+Aesculus parviflora,%,NA,48.872,NA,NA,NA
+Aesculus pavia,%,NA,49.2198,NA,NA,NA
+Larix laricina,%,NA,48.528888888888886,NA,NA,NA
+Leucothoe axillaris,%,NA,46.55,NA,NA,NA
+Ligustrum sinense,%,NA,43.19,NA,NA,NA
+Ligustrum sinense,g/kg,NA,412.5,NA,NA,NA
+Ligustrum vulgare,%,NA,49.075457854,NA,NA,NA
+Lindera benzoin,%,NA,44.885,NA,NA,NA
+Liquidambar styraciflua,%,NA,49.59570588235294,NA,NA,NA
+Liriodendron tulipifera,%,NA,47.51478125,NA,NA,NA
+Lonicera maackii,%,NA,38.76419214,NA,NA,NA
+Lonicera maackii,g/kg,NA,387.64191069869,NA,NA,NA
+Maackia amurensis,%,NA,52.80582799425,NA,NA,NA
+Maackia amurensis,g/kg,NA,456.43051362458476,NA,NA,NA
+Magnolia acuminata,%,NA,45.33618518518519,NA,NA,NA
+Magnolia fraseri,%,NA,46.257777777777775,NA,NA,NA
+Magnolia grandiflora,%,NA,46.81617647058823,NA,NA,NA
+Magnolia tripetala,%,NA,47.42,NA,NA,NA
+Magnolia virginiana,%,NA,50.64885185185185,NA,NA,NA
+Morella cerifera,%,NA,47.51,NA,NA,NA
+Morus alba,%,NA,35.272,NA,NA,NA
+Morus rubra,%,NA,31.74,NA,NA,NA
+Nyssa sylvatica,%,NA,48.28688888888889,NA,NA,NA
+Osmanthus fragrans,%,NA,50.322496379,NA,NA,NA
+Osmanthus fragrans,g/kg,NA,503.22495689530297,NA,NA,NA
+Ostrya virginiana,%,NA,46.83385,NA,NA,NA
+Ostrya virginiana,mg/g dry mass,NA,468.77802325581393,NA,0.3563427236465519,NA
+Persea borbonia,%,NA,49.900000000000006,NA,NA,NA
+Picea abies,%,NA,49.81724776733704,NA,NA,NA
+Picea abies,(mg g-1),NA,512,NA,NA,NA
+Picea abies,g C g-1 DW,NA,0.4763125,NA,NA,NA
+Picea abies,mg/mg *100,NA,48.59204264870931,NA,NA,NA
+Picea glauca,%,NA,49.74272727272727,NA,NA,NA
+Picea glauca,percent,NA,51.6578,NA,NA,NA
+Pinus echinata,%,NA,52.215399999999995,NA,NA,NA
+Pinus radiata,%,NA,50.765,NA,NA,NA
+Pinus radiata,g/100g,NA,50.765,NA,NA,NA
+Pinus strobus,%,NA,48.957086956521735,NA,NA,NA
+Pinus strobus,mg g-1,NA,477.1473684085789,NA,NA,NA
+Pinus strobus,percent,NA,51.52607692307692,NA,NA,NA
+Pinus taeda,%,NA,50.378454545454545,NA,NA,NA
+Platanus occidentalis,%,NA,46.707499999999996,NA,NA,NA
+Populus alba,%,NA,44.31,NA,NA,NA
+Populus alba,g/100g,NA,44.31,NA,NA,NA
+Populus balsamifera,%,NA,46.31699382863158,NA,NA,NA
+Populus deltoides,%,NA,41.03283333333333,NA,NA,NA
+Populus fremontii,%,NA,39.9496,NA,NA,NA
+Populus grandidentata,%,NA,48.33,NA,NA,NA
+Populus nigra,%,NA,45.831262459445284,NA,NA,NA
+Populus nigra,g/100g,NA,45.95666666666666,NA,NA,NA
+Populus tremuloides,%,NA,48.93721016949153,NA,NA,NA
+Populus tremuloides,percent,NA,49.77192473118279,NA,NA,NA
+Prunus avium,%,NA,46.611802513166666,NA,NA,NA
+Prunus avium,(mg g-1),NA,472,NA,NA,NA
+Prunus avium,g/100g,NA,46.19,NA,NA,NA
+Prunus avium,mg/mg *100,NA,46.64018112874779,NA,NA,NA
+Prunus pensylvanica,%,NA,46.176,NA,NA,NA
+Prunus pensylvanica,percent,NA,50.25378571428571,NA,NA,NA
+Prunus serotina,%,NA,46.88704100025,NA,NA,NA
+Prunus umbellata,%,NA,47.18,NA,NA,NA
+Abies concolor,g/g,NA,NA,40.48804653568421,NA,NA
+Acer buergerianum,g/g,NA,NA,16.8957144075,NA,NA
+Acer campestre,%/%,NA,NA,18.9232446523924,NA,NA
+Acer campestre,g/g,NA,NA,10.1638795141308,NA,NA
+Acer leucoderme,g/g,NA,NA,65,NA,NA
+Acer negundo,%/%,NA,NA,14.1710247915544,NA,NA
+Acer negundo,g/g,NA,NA,39.5855123957772,NA,NA
+Acer nigrum,g/g,NA,NA,65,NA,NA
+Acer pensylvanicum,g/g,NA,NA,18.502363195067417,NA,NA
+Acer platanoides,g/g,NA,NA,45.319148936,NA,NA
+Acer rubrum,g/g,NA,NA,28.984679983578946,NA,NA
+Acer rubrum,kg C per kg N,NA,NA,24.700000000000003,NA,NA
+Acer saccharinum,g/g,NA,NA,65,NA,NA
+Acer saccharum,g/g,NA,NA,20.30339456436073,NA,NA
+Acer saccharum,kg C per kg N,NA,NA,27.85,NA,NA
+Acer spicatum,g/g,NA,NA,65,NA,NA
+Aesculus flava,g/g,NA,NA,65,NA,NA
+Aesculus glabra,g/g,NA,NA,65,NA,NA
+Aesculus hippocastanum,g/g,NA,NA,2,NA,NA
+Larix laricina,g/g,NA,NA,26.904234532777778,NA,NA
+Larix laricina,kg C per kg N,NA,NA,30.5,NA,NA
+Ligustrum sinense,g/g,NA,NA,24.060143328,NA,NA
+Ligustrum vulgare,g/g,NA,NA,26.938650566775,NA,NA
+Liquidambar styraciflua,g/g,NA,NA,65,NA,NA
+Liriodendron tulipifera,g/g,NA,NA,26.170848992941178,NA,NA
+Liriodendron tulipifera,kg C per kg N,NA,NA,31.4,NA,NA
+Lonicera maackii,g/g,NA,NA,28.622422517,NA,NA
+Maackia amurensis,g/g,NA,NA,11.384649116,NA,NA
+Maclura pomifera,g/g,NA,NA,65,NA,NA
+Magnolia acuminata,g/g,NA,NA,65,NA,NA
+Magnolia fraseri,g/g,NA,NA,65,NA,NA
+Magnolia grandiflora,g/g,NA,NA,28.34813498592308,NA,NA
+Magnolia virginiana,g/g,NA,NA,22.055001329,NA,NA
+Morus alba,g/g,NA,NA,16.837438424,NA,NA
+Morus rubra,g/g,NA,NA,65,NA,NA
+Morus rubra,kg C per kg N,NA,NA,21.6,NA,NA
+Nyssa aquatica,g/g,NA,NA,65,NA,NA
+Nyssa sylvatica,g/g,NA,NA,45.95945946,NA,NA
+Osmanthus fragrans,g/g,NA,NA,72.192010552,NA,NA
+Ostrya virginiana,g/g,NA,NA,16.320239703413794,NA,NA
+Persea borbonia,g/g,NA,NA,41.240277776666666,NA,NA
+Picea abies,g/g,NA,NA,38.423645113556574,NA,NA
+Picea abies,kg C per kg N,NA,NA,43.45,NA,NA
+Picea glauca,g/g,NA,NA,42.20366980666667,NA,NA
+Picea glauca,kg C per kg N,NA,NA,40.3,NA,NA
+Pinus echinata,g/g,NA,NA,65,NA,NA
+Pinus radiata,g/g,NA,NA,34.0990882935,NA,NA
+Pinus strobus,g/g,NA,NA,32.56080947472222,NA,NA
+Pinus strobus,kg C per kg N,NA,NA,26.1,NA,NA
+Pinus taeda,g/g,NA,NA,65,NA,NA
+Pinus taeda,kg C per kg N,NA,NA,42,NA,NA
+Pinus virginiana,g/g,NA,NA,65,NA,NA
+Platanus occidentalis,g/g,NA,NA,65,NA,NA
+Populus alba,g/g,NA,NA,41.252073951,NA,NA
+Populus balsamifera,g/g,NA,NA,24.843279952820975,NA,NA
+Populus deltoides,g/g,NA,NA,40.9356846475,NA,NA
+Populus deltoides,kg C per kg N,NA,NA,21.2,NA,NA
+Populus fremontii,g/g,NA,NA,41.3735,NA,NA
+Populus grandidentata,g/g,NA,NA,21.310803964999998,NA,NA
+Populus nigra,%/%,NA,NA,27.4724083549251,NA,NA
+Populus nigra,g/g,NA,NA,30.205781959825043,NA,NA
+Populus tremuloides,g/g,NA,NA,18.596543840070176,NA,NA
+Populus tremuloides,kg C per kg N,NA,NA,22.6,NA,NA
+Populus tremuloides,unitless,NA,NA,19.575583333333334,NA,NA
+Prunus americana,g/g,NA,NA,40,NA,NA
+Prunus avium,g/g,NA,NA,23.175066078153847,NA,NA
+Prunus pensylvanica,g/g,NA,NA,65,NA,NA
+Prunus serotina,g/g,NA,NA,19.737028482641115,NA,NA
+Prunus serotina,kg C per kg N,NA,NA,21.549999999999997,NA,NA
+Ptelea trifoliata,g/g,NA,NA,65,NA,NA
+Picea abies,g g-1 DW,NA,NA,NA,NA,0.07850407142857142
+Populus alba,g g-1 DW,NA,NA,NA,NA,0.1131325
