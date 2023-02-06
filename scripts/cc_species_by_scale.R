@@ -26,7 +26,7 @@ local_stats <- cc_raw %>%
     n_surveys = length(unique(ID)))
 
 local_stats %>% 
-  filter(n_branches > 10, n_surveys > 100)
+  filter(n_branches > 5, n_surveys > 50)
 
 NC_stats <- cc_raw %>% 
   select(ID, LocalDate, julianday, Year, ObservationMethod, WetLeaves, PlantSpecies, NumberOfLeaves, SiteFK, Name, Latitude, Longitude, Region, PlantFK) %>% 

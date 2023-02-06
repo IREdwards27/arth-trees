@@ -1,0 +1,8 @@
+AccSpeciesName,LeafAreacm2,LeafCarbonPercent,LeafCNgg,Urbanity,Hemeroby,KnownAllelopathy,Toxicity,AnimalPalatableBrowse,AnimalPalatableGraze,PotentialAllelopathy
+Acer negundo,27.4083,45.98336571,39.5855124,moderately urbanophilic,2,no,none,low,low,low
+Acer rubrum,49.092,49.23874426,28.98467998,NA,NA,no,none,medium,low,none
+Acer saccharum,48.34516,47.84761692,20.30339456,NA,NA,yes,none,variable,,medium
+Prunus serotina,35.9496,46.887041,19.73702848,moderately urbanophobic,2,no,high,low,low,low
+Lindera benzoin,NA,44.885,NA,NA,NA,no,none,medium,low,NA
+Liquidambar styraciflua,NA,49.59570588,65,NA,NA,no,none,medium,,none
+Nyssa sylvatica,NA,48.28688889,45.95945946,NA,NA,no,none,medium,,none
