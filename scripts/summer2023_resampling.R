@@ -35,7 +35,6 @@ surveytrees %>%
 # resampling --------------------------------------------------------------
 
 
-
 sampleBranches <- function(){
   sheets <- map(
     # generate a list of the tree species over the summer with 5 or more branches
@@ -81,19 +80,27 @@ sampleBranches <- function(){
     # join back in tree info
     left_join(
       trees,
-      by = c('TreeFK' = 'TreeID')) %>% 
-    # get means of mean mass observed per survey by branch and number of families observed per branch
-    group_by(Species) %>% 
-    summarize(
-      mean_survey_mass = mean(mean_survey_mass),
-      mean_n_families = mean(n_families))
+      by = c('TreeFK' = 'TreeID'))
 }
 
-# sample each species branch set 100 times
-final_stats <-replicate(1000, sampleBranches(), simplify = F) %>% 
+# sample each species branch set  times
+bulk_stats <- replicate(100, sampleBranches(), simplify = F) %>% 
   # glue all the sample summaries together
-  bind_rows() %>% 
+  bind_rows()
+  
+summary_stats <- bulk_stats %>% 
   group_by(Species) %>% 
   summarize(
     mean_survey_mass = mean(mean_survey_mass),
     mean_n_families = mean(mean_n_families))
+
+ggplot(bulk_stats) +
+  geom_col(aes(
+    x = Species,
+    y = mean(mean_survey_mass)))
+
+mass_model <- lm(mean_survey_mass ~ Species,
+   data = bulk_stats)
+
+div_model <- lm(n_families ~ Species,
+                data = bulk_stats)

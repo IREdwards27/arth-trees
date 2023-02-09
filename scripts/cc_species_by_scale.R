@@ -20,13 +20,17 @@ local_stats <- cc_raw %>%
     plant_species %>% 
       select(cleanedName, sciName),
     by = c('PlantSpecies' = 'cleanedName')) %>% 
+  group_by(PlantFK,sciName) %>% 
+  summarize(n_surveys = length(unique(ID))) %>% 
+  filter(n_surveys > 9) %>% 
   group_by(sciName) %>% 
   summarize(
     n_branches = length(unique(PlantFK)),
-    n_surveys = length(unique(ID)))
+    num_surveys = sum(n_surveys, na.rm = T),
+    min_surveys = min(n_surveys, na.rm = T))
 
 local_stats %>% 
-  filter(n_branches > 5, n_surveys > 50)
+  filter(n_branches > 5, num_surveys > 50)
 
 NC_stats <- cc_raw %>% 
   select(ID, LocalDate, julianday, Year, ObservationMethod, WetLeaves, PlantSpecies, NumberOfLeaves, SiteFK, Name, Latitude, Longitude, Region, PlantFK) %>% 
