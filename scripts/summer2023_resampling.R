@@ -34,7 +34,6 @@ surveytrees %>%
 
 # resampling --------------------------------------------------------------
 
-
 sampleBranches <- function(){
   sheets <- map(
     # generate a list of the tree species over the summer with 5 or more branches
@@ -49,7 +48,8 @@ sampleBranches <- function(){
       surveytrees %>% 
         filter(Species == .x) %>% 
         pull(TreeFK),
-      size = 6)) %>% 
+      size = 6,
+      replace = T)) %>% 
     # smush all the branch IDs into a single vector
     c(recursive = T)
   
@@ -83,24 +83,20 @@ sampleBranches <- function(){
       by = c('TreeFK' = 'TreeID'))
 }
 
-# sample each species branch set  times
+# generate statistics for 100 sets of 30(?) branches (6 per species)
 bulk_stats <- replicate(100, sampleBranches(), simplify = F) %>% 
   # glue all the sample summaries together
   bind_rows()
-  
-summary_stats <- bulk_stats %>% 
-  group_by(Species) %>% 
-  summarize(
-    mean_survey_mass = mean(mean_survey_mass),
-    mean_n_families = mean(mean_n_families))
 
-ggplot(bulk_stats) +
-  geom_col(aes(
-    x = Species,
-    y = mean(mean_survey_mass)))
+# run an ANOVA - each branch is treated as a sample, 
+mass_anova <- aov(
+  mean_survey_mass ~ Species,
+  data = bulk_stats)
 
-mass_model <- lm(mean_survey_mass ~ Species,
-   data = bulk_stats)
+TukeyHSD(mass_anova)
 
-div_model <- lm(n_families ~ Species,
-                data = bulk_stats)
+div_anova <- aov(
+  n_families ~ Species,
+  data = bulk_stats)
+
+TukeyHSD(div_anova)
