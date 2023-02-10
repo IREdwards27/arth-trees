@@ -115,6 +115,7 @@ sampled_trees <- replicate(100, getSamples(), simplify = F) %>%
   bind_rows()
 
 # use the data generated above to run an ANOVA - each species summary statistics from a given sample is treated as an individual observation
+# ANOVA not necessary - go directly to comparison - Tukey's works, but are several functions (explore)
 mass_anova <- aov(
   mean_survey_mass ~ sciName,
   data = sampled_trees)
