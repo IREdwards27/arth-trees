@@ -119,6 +119,12 @@ mass_anova <- aov(
   mean_survey_mass ~ sciName,
   data = sampled_trees)
 
+TukeyHSD(mass_anova)
+
 div_anova <- aov(
   mean_n_orders ~ sciName,
   data = sampled_trees)
+
+TukeyHSD(div_anova)
+
+# no more than 5 species have data for any one plant trait, so linear models are not manageable at this time - maybe request private data from TRY for species of interest?

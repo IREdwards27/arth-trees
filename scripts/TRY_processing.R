@@ -4,6 +4,7 @@
 library(dplyr)
 library(tidyr)
 library(readr)
+library(stringr)
 
 try_raw <- read.delim('data/TRY/24551.txt', quote = "") %>% 
   as_tibble()
@@ -48,36 +49,53 @@ write_csv(try_categorical, 'data/TRY/TRY_categorical.csv')
 
 # summarize TRY stats for selected CC species -----------------------------
 
-cc_species <- cc_raw %>% 
+# get a list of the scientific names of species to sample
+focal_spp <- cc_raw %>% 
+  # select down to survey-specific traits
   select(ID, LocalDate, julianday, Year, ObservationMethod, WetLeaves, PlantSpecies, NumberOfLeaves, SiteFK, Name, Latitude, Longitude, Region, PlantFK) %>% 
+  # select individual surveys
   unique() %>% 
   filter(
+    # only include visual surveys - more total samples than beat sheets
     ObservationMethod == 'Visual',
+    # limit to recent years
     Year %in% c(2017:2019,2021:2022),
+    # limit to surveys within ~21 days of the summer solstice
     julianday >= 150,
     julianday <= 192,
+    # limit to surveys at sites in a local bounding box - roughly the Triangle
     between(Latitude, 35.5, 36.5),
     between(Longitude, -79.5, -78.5)) %>% 
+  # join in plant scientific names using Colleen's list
   left_join(
     plant_species %>% 
       select(cleanedName, sciName),
-    by = c('PlantSpecies' = 'cleanedName')) %>% 
+    by = c('PlantSpecies' = 'cleanedName'))%>% 
+  # calculate number of surveys per plant
+  group_by(PlantFK,sciName) %>% 
+  summarize(n_surveys = length(unique(ID))) %>% 
+  # only include plants with more than 9 surveys
+  filter(n_surveys > 9) %>% 
+  # calculate summary survey statistics for each plant species
   group_by(sciName) %>% 
   summarize(
     n_branches = length(unique(PlantFK)),
-    n_surveys = length(unique(ID))) %>% 
-  filter(n_branches > 5, n_surveys > 50, !is.na(sciName)) %>% 
-  mutate(sciName = if_else(
-    sciName == 'Lindera', 
-    true = 'Lindera benzoin', 
-    false = sciName)) %>% 
+    num_surveys = sum(n_surveys, na.rm = T),
+    min_surveys = min(n_surveys, na.rm = T)) %>% 
+  # cut down to species with more than 5 branches (more than 9 surveys each) and more than 50 total surveys
+  filter(n_branches > 5, num_surveys > 50, !is.na(sciName)) %>% 
+  mutate(sciName = str_replace(sciName, 'Lindera', 'Lindera benzoin')) %>% 
   pull(sciName)
 
 propNotNA <- function(x){length(x[!is.na(x)])/length(x)}
 
+try_means <- read_csv('data/TRY/TRY_means.csv')
+
+try_categorical <- read_csv('data/TRY/TRY_categorical.csv')
+
 traits <- try_means %>% 
   full_join(try_categorical, by = 'AccSpeciesName') %>%
-  filter(AccSpeciesName %in% cc_species) %>% 
+  filter(AccSpeciesName %in% focal_spp) %>% 
   summarize_all(.funs = propNotNA) %>%
   pivot_longer(cols = everything()) %>% 
   filter(value > 0, name != 'AccSpeciesName') %>% 
@@ -85,7 +103,7 @@ traits <- try_means %>%
 
 local_traits <- try_means %>%
   as_tibble() %>% 
-  filter(AccSpeciesName %in% cc_species) %>% 
+  filter(AccSpeciesName %in% focal_spp) %>% 
   select(AccSpeciesName,all_of(traits[traits %in% names(try_means)]))
 
 # write as a csv for manual processing - doing it in R is proving way more complicated than it needs to be
@@ -96,7 +114,10 @@ write_csv(local_traits, 'data/cc_plant_traits.csv')
 local_traits2 <- read_csv('data/cc_plant_traits.csv') %>% 
   select(1:4)
 
-local_traits2 %>% 
-  left_join(try_categorical, by = 'AccSpeciesName') %>% 
+try_categorical %>%
+  as_tibble() %>% 
+  filter(AccSpeciesName %in% focal_spp) %>% 
+  full_join(local_traits2) %>% 
   write_csv('data/cc_plant_traits.csv')
-  
+
+

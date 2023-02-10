@@ -1,75 +1,75 @@
 AccSpeciesName,Urbanity,Hemeroby,Known Allelopath,Toxicity,Palatable Browse Animal,Palatable Human,Potential to cause bloat in livestock,Palatable Graze Animal,Physical defences on leaves,Physical defences on stems,Physical defences on flowers/fruits,Species potential allelopathy
-Acer campestre,,,,,,,,,,,,
-Acer negundo,,,,,,,,,,,,
-Acer platanoides,,,,,,,,,,,,
-Aesculus hippocastanum,,,,,,,,,,,,
-Prunus armeniaca,,,,,,,,,,,,
-Prunus avium,,,,,,,,,,,,
-Prunus cerasus,,,,,,,,,,,,
-Ligustrum vulgare,,,,,,,,,,,,
-Lonicera tatarica,,,,,,,,,,,,
-Prunus serotina,,,,,,,,,,,,
-Prunus persica,,,,,,,,,,,,
-Physocarpus opulifolius,,,,,,,,,,,,
-Picea abies,,,,,,,,,,,,
-Picea pungens,,,,,,,,,,,,
-Pinus strobus,,,,,,,,,,,,
-Populus alba,,,,,,,,,,,,
-Populus nigra,,,,,,,,,,,,
-Populus balsamifera,,,,,,,,,,,,
-Prunus cerasifera,,,,,,,,,,,,
-Abies concolor,,,,,,,,,,,,
-Acer saccharum,,,,,,,,,,,,
-Acer nigrum,,,,,,,,,,,,
-Acer pensylvanicum,,,,,,,,,,,,
-Acer rubrum,,,,,,,,,,,,
-Acer saccharinum,,,,,,,,,,,,
-Acer spicatum,,,,,,,,,,,,
-Aesculus flava,,,,,,,,,,,,
-Aesculus glabra,,,,,,,,,,,,
-Aesculus pavia,,,,,,,,,,,,
-Lagerstroemia indica,,,,,,,,,,,,
-Larix laricina,,,,,,,,,,,,
-Leucothoe axillaris,,,,,,,,,,,,
-Ligustrum japonicum,,,,,,,,,,,,
-Lindera benzoin,,,,,,,,,,,,
-Liquidambar styraciflua,,,,,,,,,,,,
-Liriodendron tulipifera,,,,,,,,,,,,
-Lonicera involucrata,,,,,,,,,,,,
-Lonicera japonica,,,,,,,,,,,,
-Lonicera maackii,,,,,,,,,,,,
-Maclura pomifera,,,,,,,,,,,,
-Magnolia acuminata,,,,,,,,,,,,
-Magnolia fraseri,,,,,,,,,,,,
-Magnolia grandiflora,,,,,,,,,,,,
-Magnolia tripetala,,,,,,,,,,,,
-Magnolia virginiana,,,,,,,,,,,,
-Malus sieboldii,,,,,,,,,,,,
-Malus fusca,,,,,,,,,,,,
-Malus ioensis,,,,,,,,,,,,
-Morella cerifera,,,,,,,,,,,,
-Morus alba,,,,,,,,,,,,
-Morus rubra,,,,,,,,,,,,
-Nandina domestica,,,,,,,,,,,,
-Nerium oleander,,,,,,,,,,,,
-Nyssa aquatica,,,,,,,,,,,,
-Nyssa sylvatica,,,,,,,,,,,,
-Ostrya virginiana,,,,,,,,,,,,
-Persea borbonia,,,,,,,,,,,,
-Phyllostachys aurea,,,,,,,,,,,,
-Picea glauca,,,,,,,,,,,,
-Pinus echinata,,,,,,,,,,,,
-Pinus radiata,,,,,,,,,,,,
-Pinus taeda,,,,,,,,,,,,
-Pinus virginiana,,,,,,,,,,,,
-Platanus occidentalis,,,,,,,,,,,,
-Populus deltoides,,,,,,,,,,,,
-Populus fremontii,,,,,,,,,,,,
-Populus grandidentata,,,,,,,,,,,,
-Populus tremuloides,,,,,,,,,,,,
-Prunus americana,,,,,,,,,,,,
-Prunus maritima,,,,,,,,,,,,
-Prunus pensylvanica,,,,,,,,,,,,
-Ptelea trifoliata,,,,,,,,,,,,
-Prunus laurocerasus,,,,,,,,,,,,
-Acer leucoderme,,,,,,,,,,,,
+Acer campestre,moderately urbanophobic,2_mesohemerobic_oligohemerobic,NA,none,NA,NA,NA,NA,soft hairs_soft hairs_subglabrous_soft hairs_soft hairs,NA,NA,NA
+Acer negundo,moderately urbanophilic,2_b-euhemerobic_mesohemerobic,No,None_none,Low,No,NA,Low,NA,NA,NA,low allelopathic
+Acer platanoides,urbanoneutral,4_b-euhemerobic_a-euhemerobic_mesohemerobic_oligohemerobic,No,None_none,Low,No,NA,Low,glabrous_glabrous,NA,NA,low allelopathic
+Aesculus hippocastanum,moderately urbanophilic,3_b-euhemerobic_a-euhemerobic_mesohemerobic,NA,low,NA,NA,NA,NA,glabrous_glabrous,NA,spines,allelopathic
+Prunus armeniaca,moderately urbanophilic,4_b-euhemerobic_a-euhemerobic_mesohemerobic_polyhemerobic,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Prunus avium,moderately urbanophobic,2_mesohemerobic_oligohemerobic,NA,low,NA,NA,NA,NA,glabrous_soft hairs,NA,NA,NA
+Prunus cerasus,urbanoneutral,2_b-euhemerobic_mesohemerobic,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Ligustrum vulgare,moderately urbanophobic,3_b-euhemerobic_mesohemerobic_oligohemerobic,No,None,Low,No,NA,Low,NA,soft hairs_soft hairs,NA,NA
+Lonicera tatarica,moderately urbanophilic,2_b-euhemerobic_mesohemerobic,No,None,Low,No,None,Low,NA,NA,NA,NA
+Prunus serotina,moderately urbanophobic,2_b-euhemerobic_mesohemerobic,No,Severe_high,Low,Yes,Low,Low,NA,NA,NA,low allelopathic
+Prunus persica,moderately urbanophilic,3_b-euhemerobic_a-euhemerobic_mesohemerobic,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Physocarpus opulifolius,urbanophilic,2_b-euhemerobic_a-euhemerobic,No,None,Low,No,None,NA,NA,NA,NA,NA
+Picea abies,urbanophobic,4_ahemerobic_b-euhemerobic_mesohemerobic_oligohemerobic,No,None_none,Low,No,None,NA,NA,NA,NA,low allelopathic
+Picea pungens,moderately urbanophilic,4_b-euhemerobic_a-euhemerobic_mesohemerobic_polyhemerobic,No,None,Low,No,None,Low,NA,NA,NA,NA
+Pinus strobus,urbanoneutral,2_b-euhemerobic_mesohemerobic,No_no,None_none,Medium,No,None,Low,NA,NA,NA,low allelopathic
+Populus alba,urbanoneutral,3_b-euhemerobic_a-euhemerobic_mesohemerobic,No,None_none,Medium,No,None,Low,glabrous_glabrous,dense hairs_dense hairs_dense hairs_dense hairs,NA,not allelopathic
+Populus nigra,moderately urbanophobic,2_mesohemerobic_oligohemerobic,No,None_none,Low,No,NA,Low,glabrous_glabrous,NA,soft hairs_viscid,not allelopathic
+Populus balsamifera,urbanoneutral,2_b-euhemerobic_mesohemerobic,No_No,None_None_none,Medium_Medium,No_No,None_None,Low_Low,NA,NA,NA,not allelopathic
+Prunus cerasifera,moderately urbanophilic,2_b-euhemerobic_mesohemerobic,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Abies concolor,NA,NA,No,None_none,Low,No,NA,NA,NA,NA,NA,low allelopathic
+Acer saccharum,NA,NA,No_Yes,None_None_none,Low_High,Yes_Yes,None,NA,NA,NA,NA,allelopathic
+Acer nigrum,NA,NA,No,None_none,Medium,No,NA,NA,NA,NA,NA,not allelopathic
+Acer pensylvanicum,NA,NA,Yes,None_none,High,No,NA,Medium,NA,NA,NA,not allelopathic
+Acer rubrum,NA,NA,No_no,None_none,Medium,No,NA,Low,NA,NA,NA,not allelopathic
+Acer saccharinum,NA,NA,No,None_none,Low,No,NA,Low,NA,NA,NA,low allelopathic
+Acer spicatum,NA,NA,No,None_none,Medium,No,None,Low,NA,NA,NA,not allelopathic
+Aesculus flava,NA,NA,No,Severe_high,Low,No,NA,NA,NA,NA,NA,allelopathic
+Aesculus glabra,NA,NA,No,Severe_high,Low,No,NA,Low,NA,NA,NA,allelopathic
+Aesculus pavia,NA,NA,No,Severe,Low,No,None,Low,NA,NA,NA,NA
+Lagerstroemia indica,NA,NA,No,None,Low,No,None,Low,NA,NA,NA,NA
+Larix laricina,NA,NA,No,None_none,Low,No,None,Low,NA,NA,NA,not allelopathic
+Leucothoe axillaris,NA,NA,No,None,Medium,No,NA,Low,NA,NA,NA,NA
+Ligustrum japonicum,NA,NA,No,Slight,Low,No,NA,Low,NA,NA,NA,NA
+Lindera benzoin,NA,NA,No,None,Medium,No,None,Low,NA,NA,NA,NA
+Liquidambar styraciflua,NA,NA,No,None_none,Medium,No,None,NA,NA,NA,NA,not allelopathic
+Liriodendron tulipifera,NA,NA,No,None_none,Low,No,None,NA,NA,NA,NA,not allelopathic
+Lonicera involucrata,NA,NA,No,None,High,No,None,High,NA,NA,NA,NA
+Lonicera japonica,NA,NA,No,None,Medium,No,None,Low,NA,NA,NA,NA
+Lonicera maackii,NA,NA,No,None,Low,No,None,Low,NA,NA,NA,NA
+Maclura pomifera,NA,NA,No,None_none,Low,No,None,Low,NA,NA,NA,not allelopathic
+Magnolia acuminata,NA,NA,No,None_none,Low,No,None,Low,NA,NA,NA,not allelopathic
+Magnolia fraseri,NA,NA,No,None_none,Low,No,None,NA,NA,NA,NA,not allelopathic
+Magnolia grandiflora,NA,NA,No,None_none,Low,No,NA,Low,NA,NA,NA,not allelopathic
+Magnolia tripetala,NA,NA,No,None,Medium,No,None,Medium,NA,NA,NA,NA
+Magnolia virginiana,NA,NA,No,None_none,Low,No,None,NA,NA,NA,NA,not allelopathic
+Malus sieboldii,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Malus fusca,NA,NA,No,NA,Low,Yes,NA,Low,NA,NA,NA,NA
+Malus ioensis,NA,NA,No,None,High,No,None,Low,NA,NA,NA,NA
+Morella cerifera,NA,NA,No,None,Low,No,NA,Low,NA,NA,NA,NA
+Morus alba,NA,NA,No,None,Low,No,None,NA,NA,NA,NA,NA
+Morus rubra,NA,NA,No,None_none,Low,No,None,NA,NA,NA,NA,not allelopathic
+Nandina domestica,NA,NA,No,None,Low,No,NA,Low,NA,NA,NA,NA
+Nerium oleander,NA,NA,No,Moderate,NA,No,None,NA,NA,NA,NA,NA
+Nyssa aquatica,NA,NA,No,None_none,Medium,No,None,NA,NA,NA,NA,not allelopathic
+Nyssa sylvatica,NA,NA,No_No,None_None_none,Medium_Medium,No_No,None_None,NA,NA,NA,NA,not allelopathic
+Ostrya virginiana,NA,NA,No,None_none,Medium,No,None,NA,NA,NA,NA,not allelopathic
+Persea borbonia,NA,NA,No,None_none,NA,No,NA,NA,NA,NA,NA,not allelopathic
+Phyllostachys aurea,NA,NA,No,None,NA,No,None,NA,NA,NA,NA,NA
+Picea glauca,NA,NA,No_no,None_none,Low,No,None,NA,NA,NA,NA,not allelopathic
+Pinus echinata,NA,NA,No,None_none,Low,No,NA,Low,NA,NA,NA,not allelopathic
+Pinus radiata,NA,NA,No,None,NA,No,NA,NA,NA,NA,NA,NA
+Pinus taeda,NA,NA,No,None_none,Low,No,NA,Low,NA,NA,NA,not allelopathic
+Pinus virginiana,NA,NA,No,None_none,Low,No,NA,Low,NA,NA,NA,not allelopathic
+Platanus occidentalis,NA,NA,No,None_none,Low,No,None,NA,NA,NA,NA,allelopathic
+Populus deltoides,NA,NA,No,None_none,Medium,No,None,Low,NA,NA,NA,allelopathic
+Populus fremontii,NA,NA,No,None,Low,No,NA,Low,NA,NA,NA,NA
+Populus grandidentata,NA,NA,No_no,None_none,Medium,No,None,Low,NA,NA,NA,allelopathic
+Populus tremuloides,NA,NA,No_no,None_none,High,No,None,Medium,NA,NA,NA,allelopathic
+Prunus americana,NA,NA,No,Slight_low,Medium,Yes,None,Low,NA,NA,NA,not allelopathic
+Prunus maritima,NA,NA,No,None,Medium,Yes,NA,Low,NA,NA,NA,NA
+Prunus pensylvanica,NA,NA,No,Moderate_medium,Medium,Yes,None,NA,NA,NA,NA,not allelopathic
+Ptelea trifoliata,NA,NA,No,None_none,Low,No,NA,Low,NA,NA,NA,not allelopathic
+Prunus laurocerasus,NA,NA,NA,NA,NA,NA,NA,NA,glabrous_thick cuticle,NA,NA,NA
+Acer leucoderme,NA,NA,NA,none,NA,NA,NA,NA,NA,NA,NA,not allelopathic

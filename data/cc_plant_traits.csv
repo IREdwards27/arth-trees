@@ -1,8 +1,7 @@
-AccSpeciesName,LeafAreacm2,LeafCarbonPercent,LeafCNgg,Urbanity,Hemeroby,KnownAllelopathy,Toxicity,AnimalPalatableBrowse,AnimalPalatableGraze,PotentialAllelopathy
-Acer negundo,27.4083,45.98336571,39.5855124,moderately urbanophilic,2,no,none,low,low,low
-Acer rubrum,49.092,49.23874426,28.98467998,NA,NA,no,none,medium,low,none
-Acer saccharum,48.34516,47.84761692,20.30339456,NA,NA,yes,none,variable,,medium
-Prunus serotina,35.9496,46.887041,19.73702848,moderately urbanophobic,2,no,high,low,low,low
-Lindera benzoin,NA,44.885,NA,NA,NA,no,none,medium,low,NA
-Liquidambar styraciflua,NA,49.59570588,65,NA,NA,no,none,medium,,none
-Nyssa sylvatica,NA,48.28688889,45.95945946,NA,NA,no,none,medium,,none
+AccSpeciesName,Urbanity,Hemeroby,KnownAllelopath,Toxicity,PalatableBrowseAnimal,PalatableHuman,PalatableGrazeAnimal,SpeciesPotentialAllelopathy,LeafAreacm2,LeafCarbonPercent,LeafCNMass
+Acer negundo,moderately urbanophilic,2_b-euhemerobic_mesohemerobic,no,none,low,no,low,low,27.4083,45.98336571,39.5855124
+Prunus serotina,moderately urbanophobic,2_b-euhemerobic_mesohemerobic,no,high,low,yes,low,low,35.9496,46.887041,20.64351424
+Acer saccharum,NA,NA,yes,none,unclear,yes,NA,moderate,48.34516,47.84761692,24.07669728
+Acer rubrum,NA,NA,no,none,medium,no,low,none,49.092,49.23874426,26.84233999
+Lindera benzoin,NA,NA,no,none,medium,no,low,NA,NA,44.885,NA
+Liquidambar styraciflua,NA,NA,no,none,high,no,NA,none,NA,49.59570588,65
