@@ -23,26 +23,22 @@ surveytrees <- surveys %>%
 
 # sample checking ---------------------------------------------------------
 
-surveytrees %>% 
+# generate a list of the tree species over the summer with 5 or more branches
+focal_species <- surveytrees %>% 
   group_by(Species) %>% 
   summarize(
     nbranches = length(unique(TreeFK)),
     nsurveys = length(unique(BeatSheetID))) %>% 
   arrange(desc(nbranches)) %>% 
-  filter(nbranches > 5)
+  filter(nbranches > 5) %>% 
+  pull(Species)
 
 
 # resampling --------------------------------------------------------------
 
 sampleBranches <- function(){
   sheets <- map(
-    # generate a list of the tree species over the summer with 5 or more branches
-    .x = surveytrees %>% 
-      group_by(Species) %>% 
-      summarize(
-        nbranches = length(unique(TreeFK))) %>%
-      filter(nbranches > 5) %>% 
-      pull(Species),
+    .x = focal_species,
     # generate a random sample of 6 of the branches for each species and pull the branch IDs
     .f = ~ sample(
       surveytrees %>% 
@@ -54,29 +50,13 @@ sampleBranches <- function(){
     c(recursive = T)
   
   surveytrees %>% 
-    # pull out the surveys on branches from the chosen sample
-    filter(TreeFK %in% sheets) %>% 
-    # join to arthropod observations
-    left_join(
-      arths,
-      by = c('BeatSheetID' = 'BeatSheetFK')) %>% 
-    # get total mass of arthropods collected in each survey
-    group_by(BeatSheetID, TreeFK) %>% 
-    summarize(total_survey_mass = sum(TotalMass, na.rm = T)) %>% 
-    # get mean mass per survey for each branch
-    group_by(TreeFK) %>% 
-    summarize(mean_survey_mass = mean(total_survey_mass)) %>% 
-    # join in family diversity per branch
-    left_join(
-      surveytrees %>% 
         filter(TreeFK %in% sheets) %>% 
         left_join(
           arths,
           by = c('BeatSheetID' = 'BeatSheetFK')) %>%
         # get family diversity per branch
         group_by(TreeFK) %>% 
-        summarize(n_families = length(unique(family))),
-      by = 'TreeFK') %>% 
+        summarize(n_families = length(unique(family))) %>% 
     # join back in tree info
     left_join(
       trees,
@@ -84,19 +64,111 @@ sampleBranches <- function(){
 }
 
 # generate statistics for 100 sets of 30(?) branches (6 per species)
-bulk_stats <- replicate(100, sampleBranches(), simplify = F) %>% 
+div_stats <- replicate(100, sampleBranches(), simplify = F) %>% 
   # glue all the sample summaries together
   bind_rows()
 
 # run an ANOVA - each branch is treated as a sample, 
-mass_anova <- aov(
-  mean_survey_mass ~ Species,
-  data = bulk_stats)
-
-TukeyHSD(mass_anova)
 
 div_anova <- aov(
-  n_families ~ Species,
-  data = bulk_stats)
+  mean_families ~ Species,
+  data = div_stats)
 
 TukeyHSD(div_anova)
+
+biomass_raw <- surveytrees %>% 
+  # pull out the surveys on branches from the chosen sample
+  filter(Species %in% focal_species) %>% 
+  # join to arthropod observations
+  left_join(
+    arths,
+    by = c('BeatSheetID' = 'BeatSheetFK')) %>% 
+  # get total mass of arthropods collected in each survey
+  group_by(BeatSheetID, TreeFK) %>% 
+  summarize(
+    total_survey_mass = sum(TotalMass, na.rm = T)) %>% 
+  # join back in tree info
+  left_join(
+    trees,
+    by = c('TreeFK' = 'TreeID'))
+
+biomass_stats <- surveytrees %>% 
+  # pull out the surveys on branches from the chosen sample
+  filter(Species %in% focal_species) %>% 
+  # join to arthropod observations
+  left_join(
+    arths,
+    by = c('BeatSheetID' = 'BeatSheetFK')) %>% 
+  # get total mass of arthropods collected in each survey
+  group_by(BeatSheetID, TreeFK) %>% 
+  summarize(
+    total_survey_mass = sum(TotalMass, na.rm = T)) %>% 
+  # get mean mass per survey for each branch
+  group_by(TreeFK) %>% 
+  summarize(
+    mean_survey_mass = mean(total_survey_mass)) %>% 
+    # join back in tree info
+  left_join(
+    trees,
+    by = c('TreeFK' = 'TreeID'))
+
+kruskal.test(
+  mean_survey_mass ~ Species,
+  data = biomass_stats)
+
+# plotting ----------------------------------------------------------------
+
+biomass_err <- biomass_stats %>% 
+  group_by(Species) %>% 
+  summarize(
+    mean_biomass = mean(mean_survey_mass),
+    stdv_biomass = sd(mean_survey_mass))
+
+ggplot(biomass_stats) + 
+  geom_point(
+    mapping = aes(
+      x = Species,
+      y = mean_survey_mass,
+      color = Species),
+    stat = 'summary',
+    fun = 'mean',
+    size = 3) +
+  geom_errorbar(
+    data = biomass_err,
+    mapping = aes(
+      x = Species,
+      ymin = mean_biomass - stdv_biomass,
+      ymax = mean_biomass + stdv_biomass)) +
+  labs(
+    color = 'Tree Species',
+    y = 'Mean mass observed per survey (mg)') +
+  theme(axis.text.x = element_blank())
+
+div_err <- div_stats %>% 
+  group_by(Species) %>% 
+  summarize(
+    mean_families = mean(n_families),
+    stdv_families = sd(n_families))
+
+ggplot(div_stats) + 
+  geom_point(
+    mapping = aes(
+      x = Species,
+      y = n_families,
+      color = Species),
+    stat = 'summary',
+    fun = 'mean',
+    size = 3) +
+  geom_errorbar(
+    data = div_err,
+    mapping = aes(
+      x = Species,
+      ymin = mean_families - stdv_families,
+      ymax = mean_families + stdv_families)) +
+  scale_y_continuous(
+    limits = c(0,12),
+    expand = c(0,0)) +
+  labs(
+    color = 'Tree Species',
+    y = 'Number of Families Observed per Branch') +
+  theme(axis.text.x = element_blank())
