@@ -118,57 +118,28 @@ kruskal.test(
 
 # plotting ----------------------------------------------------------------
 
-biomass_err <- biomass_stats %>% 
-  group_by(Species) %>% 
-  summarize(
-    mean_biomass = mean(mean_survey_mass),
-    stdv_biomass = sd(mean_survey_mass))
-
 ggplot(biomass_stats) + 
-  geom_point(
+  geom_boxplot(
     mapping = aes(
       x = Species,
       y = mean_survey_mass,
-      color = Species),
-    stat = 'summary',
-    fun = 'mean',
-    size = 3) +
-  geom_errorbar(
-    data = biomass_err,
-    mapping = aes(
-      x = Species,
-      ymin = mean_biomass - stdv_biomass,
-      ymax = mean_biomass + stdv_biomass)) +
+      color = Species)) +
   labs(
-    color = 'Tree Species',
-    y = 'Mean mass observed per survey (mg)') +
+    color = 'Tree species',
+    x = NULL,
+    y = 'Mean biomass per survey (mg)') +
   theme(axis.text.x = element_blank())
 
-div_err <- div_stats %>% 
-  group_by(Species) %>% 
-  summarize(
-    mean_families = mean(n_families),
-    stdv_families = sd(n_families))
-
 ggplot(div_stats) + 
-  geom_point(
+  geom_boxplot(
     mapping = aes(
       x = Species,
       y = n_families,
-      color = Species),
-    stat = 'summary',
-    fun = 'mean',
-    size = 3) +
-  geom_errorbar(
-    data = div_err,
-    mapping = aes(
-      x = Species,
-      ymin = mean_families - stdv_families,
-      ymax = mean_families + stdv_families)) +
+      color = Species)) +
   scale_y_continuous(
     limits = c(0,12),
     expand = c(0,0)) +
   labs(
     color = 'Tree Species',
-    y = 'Number of Families Observed per Branch') +
+    y = 'Number of families observed per branch') +
   theme(axis.text.x = element_blank())

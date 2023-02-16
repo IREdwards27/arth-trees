@@ -28,6 +28,11 @@ focal_spp <- cc_raw %>%
     plant_species %>% 
       select(cleanedName, sciName),
     by = c('PlantSpecies' = 'cleanedName'))%>% 
+  mutate(
+    sciName = if_else(
+      sciName == 'Lindera',
+      true = 'Lindera benzoin',
+      false = sciName)) %>% 
   # calculate number of surveys per plant
   group_by(PlantFK,sciName) %>% 
   summarize(n_surveys = length(unique(ID))) %>% 
@@ -106,7 +111,6 @@ getSamples <- function(){
     filter(ID %in% sample_surveys) %>% 
     group_by(sciName) %>% 
     summarize(
-      mean_survey_mass = mean(survey_mass),
       mean_n_orders = mean(n_orders))
 }
 
@@ -114,18 +118,56 @@ getSamples <- function(){
 sampled_trees <- replicate(100, getSamples(), simplify = F) %>% 
   bind_rows()
 
-# use the data generated above to run an ANOVA - each species summary statistics from a given sample is treated as an individual observation
-# ANOVA not necessary - go directly to comparison - Tukey's works, but are several functions (explore)
-mass_anova <- aov(
-  mean_survey_mass ~ sciName,
-  data = sampled_trees)
-
-TukeyHSD(mass_anova)
-
 div_anova <- aov(
   mean_n_orders ~ sciName,
   data = sampled_trees)
 
 TukeyHSD(div_anova)
 
-# no more than 5 species have data for any one plant trait, so linear models are not manageable at this time - maybe request private data from TRY for species of interest?
+# use the data generated above to run an ANOVA - each species summary statistics from a given sample is treated as an individual observation
+# ANOVA not necessary - go directly to comparison - Tukey's works, but are several functions (explore)
+
+mass_stats <- all_surveys %>% 
+  filter(sciName %in% focal_spp) %>% 
+  group_by(PlantFK, sciName) %>% 
+  summarize(
+    n_surveys = length(unique(ID)),
+    mean_survey_mass = mean(survey_mass, na.rm = T)) %>% 
+  filter(n_surveys > 9)
+
+mass_anova <- aov(
+  log(mean_survey_mass) ~ sciName,
+  data = mass_stats)
+
+TukeyHSD(mass_anova)
+
+
+# plotting ----------------------------------------------------------------
+
+# ggbreak may be worth using for the final version of this plot - those outliers could use some assessment, too, though
+
+ggplot(mass_stats) + 
+  geom_boxplot(
+    mapping = aes(
+      x = sciName, 
+      y = mean_survey_mass,
+      color = sciName)) +
+  labs(
+    x = NULL,
+    y = 'Mean biomass per survey (mg)',
+    color = 'Tree species') +
+  theme(
+    axis.text.x = element_blank())
+
+ggplot(sampled_trees) + 
+  geom_boxplot(
+    mapping = aes(
+      x = sciName,
+      y = mean_n_orders,
+      color = sciName)) +
+  labs(
+    x = NULL,
+    y = 'Mean number of CC groups per survey',
+    color = 'Tree species') +
+  theme(
+    axis.text.x = element_blank())
