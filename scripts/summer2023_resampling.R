@@ -71,7 +71,7 @@ div_stats <- replicate(100, sampleBranches(), simplify = F) %>%
 # run an ANOVA - each branch is treated as a sample, 
 
 div_anova <- aov(
-  mean_families ~ Species,
+  n_families ~ Species,
   data = div_stats)
 
 TukeyHSD(div_anova)
@@ -143,3 +143,4 @@ ggplot(div_stats) +
     color = 'Tree Species',
     y = 'Number of families observed per branch') +
   theme(axis.text.x = element_blank())
+

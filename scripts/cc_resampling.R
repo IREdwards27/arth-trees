@@ -62,6 +62,11 @@ all_surveys <- cc_raw %>%
     plant_species %>% 
       select(cleanedName, sciName),
     by = c('PlantSpecies' = 'cleanedName')) %>% 
+  mutate(
+    sciName = if_else(
+      sciName == 'Lindera',
+      'Lindera benzoin',
+      sciName)) %>% 
   # select surveys only on species within the list
   filter(
     sciName %in% focal_spp,
@@ -85,7 +90,7 @@ getSamples <- function(){
         # pull a vector of all the branches with more than 9 surveys for species x
         branches <- all_surveys %>% 
           filter(sciName == x) %>% 
-          group_by(PlantFK) %>% 
+          group_by(sciName, PlantFK) %>% 
           summarize(n_surveys = length(unique(ID))) %>% 
           filter(n_surveys > 9) %>% 
           pull(PlantFK)
