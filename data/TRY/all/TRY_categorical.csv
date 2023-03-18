@@ -1,0 +1,194 @@
+AccSpeciesName,Leaf physical strength / toughness: tensile strength (N/m) and sclerophylly (categorical),Urbanity,Hemeroby,Leaf nitrogen content per dry mass (Nmass),Foliage Texture,Known Allelopath,Toxicity,Palatable Browse Animal,Palatable Human,Potential to cause bloat in livestock,Palatable Graze Animal,"Leaf force to punch, force required for a punch rod to penetrate a leaf per circumference of the punch (FP)",Species potential allelopathy,Leaf Fe (iron) content per dry mass
+Acer campestre,4.51107809467452E-02_always mesomorphic,moderately urbanophobic,mesohemerobic_oligohemerobic,NA,NA,NA,none,NA,NA,NA,NA,NA,NA,NA
+Fagus sylvatica,6.04356868911071E-02_always mesomorphic,moderately urbanophobic,b-euhemerobic_mesohemerobic_oligohemerobic,2.10733333333333E-02_2.00991666666667E-02_1.95183333333333E-02_1.78873529411765E-02_2.30460465116279E-02_2.06102380952381E-02_2.46114285714286E-02_2.63933333333333E-02,NA,NA,low,NA,NA,NA,NA,NA,allelopathic,NA
+Ligustrum vulgare,"4.73048788445751E-02_always mesomorphic, sometimes scleromorphic",moderately urbanophobic,b-euhemerobic_mesohemerobic_oligohemerobic,NA,Medium,No,None,Low,No,NA,Low,NA,NA,NA
+Prunus avium,5.95282912504145E-02_always mesomorphic,moderately urbanophobic,mesohemerobic_oligohemerobic,NA,NA,NA,low,NA,NA,NA,NA,NA,NA,NA
+Rubus idaeus,3.42242019629386E-02_always mesomorphic,moderately urbanophobic,b-euhemerobic_mesohemerobic_oligohemerobic,NA,Coarse,No,Slight,Low,Yes,None,Low,NA,NA,NA
+Tilia cordata,6.85460347063705E-02_always mesomorphic,moderately urbanophobic,b-euhemerobic_mesohemerobic_oligohemerobic,NA,Fine,No,None_none,NA,No,None,NA,NA,low allelopathic,NA
+Acer negundo,always mesomorphic,moderately urbanophilic,b-euhemerobic_mesohemerobic,NA,Coarse,No,None_none,Low,No,NA,Low,NA,low allelopathic,NA
+Acer platanoides,"sometimes hygromorphic, always mesomorphic",urbanoneutral,b-euhemerobic_a-euhemerobic_mesohemerobic_oligohemerobic,NA,Medium,No,None_none,Low,No,NA,Low,NA,low allelopathic,NA
+Aesculus hippocastanum,always mesomorphic,moderately urbanophilic,b-euhemerobic_a-euhemerobic_mesohemerobic,NA,NA,NA,low,NA,NA,NA,NA,NA,allelopathic,NA
+Amelanchier alnifolia,always mesomorphic,urbanoneutral,b-euhemerobic_mesohemerobic,NA,Coarse,No,None,High,Yes,None,Low,NA,NA,NA
+Buxus sempervirens,always scleromorphic,moderately urbanophobic,mesohemerobic_oligohemerobic,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Prunus cerasus,always mesomorphic,urbanoneutral,b-euhemerobic_mesohemerobic,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cornus mas,"always mesomorphic, sometimes scleromorphic",moderately urbanophobic,b-euhemerobic_mesohemerobic_oligohemerobic,NA,Coarse,No,None_none,Medium,No,None,NA,NA,not allelopathic,NA
+Cornus sericea,always mesomorphic,moderately urbanophilic,b-euhemerobic_mesohemerobic,NA,Coarse,No,None,High,No,None,Low,NA,NA,NA
+Elaeagnus angustifolia,always scleromorphic,urbanophilic,b-euhemerobic_mesohemerobic,NA,Coarse,No,None,Low,Yes,None,Low,NA,NA,NA
+Euonymus europaeus,always mesomorphic,moderately urbanophobic,mesohemerobic_oligohemerobic,NA,NA,NA,low,NA,NA,NA,NA,NA,NA,NA
+Fraxinus pennsylvanica,always mesomorphic,moderately urbanophobic,mesohemerobic,NA,Coarse,No,None_none,Medium,No,NA,Low,NA,allelopathic,NA
+Lonicera tatarica,always mesomorphic,moderately urbanophilic,b-euhemerobic_mesohemerobic,NA,Coarse,No,None,Low,No,None,Low,NA,NA,NA
+Prunus serotina,always mesomorphic_NULL_NULL_NULL,moderately urbanophobic,b-euhemerobic_mesohemerobic,NA,Medium,No,Severe_high,Low,Yes,Low,Low,NA,low allelopathic,NA
+Prunus persica,always mesomorphic,moderately urbanophilic,b-euhemerobic_a-euhemerobic_mesohemerobic,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Physocarpus opulifolius,always mesomorphic,urbanophilic,b-euhemerobic_a-euhemerobic,NA,Medium,No,None,Low,No,None,NA,NA,NA,NA
+Picea abies,always scleromorphic,urbanophobic,ahemerobic_b-euhemerobic_mesohemerobic_oligohemerobic,1.16666666666667E-02_1.21333333333333E-02_6.58333333333333E-03_7.56832360797005E-03_6.86666666666667E-03_9.65511255860186E-03_8.78333333333333E-03_1.04066666666667E-02,Medium,No,None_none,Low,No,None,NA,NA,low allelopathic,NA
+Picea pungens,always scleromorphic,moderately urbanophilic,b-euhemerobic_a-euhemerobic_mesohemerobic_polyhemerobic,NA,Medium,No,None,Low,No,None,Low,NA,NA,NA
+Pinus strobus,always scleromorphic,urbanoneutral,b-euhemerobic_mesohemerobic,NA,Fine,No_no,None_none,Medium,No,None,Low,NA,low allelopathic,NA
+Populus alba,always mesomorphic,urbanoneutral,b-euhemerobic_a-euhemerobic_mesohemerobic,NA,Coarse,No,None_none,Medium,No,None,Low,NA,not allelopathic,NA
+Populus nigra,always mesomorphic,moderately urbanophobic,mesohemerobic_oligohemerobic,NA,Medium,No,None_none,Low,No,NA,Low,NA,not allelopathic,NA
+Populus balsamifera,always mesomorphic,urbanoneutral,b-euhemerobic_mesohemerobic,NA,Medium_Medium,No_No,None_None_none,Medium_Medium,No_No,None_None,Low_Low,NA,not allelopathic,NA
+Prunus cerasifera,always mesomorphic,moderately urbanophilic,b-euhemerobic_mesohemerobic,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Quercus robur,always mesomorphic,moderately urbanophobic,mesohemerobic_oligohemerobic,NA,NA,NA,low,NA,NA,NA,NA,NA,allelopathic,NA
+Quercus rubra,always mesomorphic,moderately urbanophobic,b-euhemerobic_mesohemerobic,NA,Medium,No_no,None_none,Medium,No,None,NA,NA,low allelopathic,NA
+Rhamnus cathartica,always mesomorphic,urbanophobic,mesohemerobic_oligohemerobic,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rhus typhina,always mesomorphic,urbanophilic,b-euhemerobic_mesohemerobic,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Robinia pseudoacacia,always mesomorphic,urbanoneutral,b-euhemerobic_a-euhemerobic_mesohemerobic,NA,Medium,No,None_none,Low,No,None,Low,4.54728792926967E-02,allelopathic,NA
+Rosa multiflora,always mesomorphic,moderately urbanophilic,b-euhemerobic_mesohemerobic,NA,NA,NA,NA,NA,NA,NA,NA,3.05058283793474E-02,NA,NA
+Sambucus racemosa,always mesomorphic,moderately urbanophobic,b-euhemerobic_mesohemerobic,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Syringa vulgaris,always mesomorphic,moderately urbanophilic,b-euhemerobic_mesohemerobic,NA,Medium,No,None,Low,No,None,Low,NA,NA,NA
+Abies concolor,NA,NA,NA,NA,Medium,No,None_none,Low,No,NA,NA,NA,low allelopathic,NA
+Acer saccharum,NA,NA,NA,3.79E-02_1.96E-02_1.85E-02_3.03E-02_1.96E-02_2.08E-02_2.01E-02_2.81E-02_2.11E-02_2.13E-02_2.92E-02_2.89E-02_2.75E-02_2.39E-02_2.56E-02_2.48E-02_2.48E-02_2.83E-02_2.74E-02_2.33E-02_2.47E-02_1.82E-02_1.70E-02_1.58E-02_1.17E-02_2.05E-02_1.67E-02_1.79E-02_1.34E-02_1.64E-02_2.68E-02_2.49E-02_2.58E-02_2.57E-02_2.44E-02_2.18E-02_2.02E-02_2.04E-02_2.02E-02_1.98E-02_2.22E-02,Medium_Coarse,No_Yes,None_None_none,Low_High,Yes_Yes,None,NA,NA,allelopathic,NA
+Acer nigrum,NA,NA,NA,NA,Medium,No,None_none,Medium,No,NA,NA,NA,not allelopathic,NA
+Acer pensylvanicum,NA,NA,NA,NA,Medium,Yes,None_none,High,No,NA,Medium,NA,not allelopathic,NA
+Acer rubrum,NA,NA,NA,NA,Medium,No_no,None_none,Medium,No,NA,Low,NA,not allelopathic,NA
+Acer saccharinum,NA,NA,NA,NA,Medium,No,None_none,Low,No,NA,Low,NA,low allelopathic,NA
+Acer spicatum,NA,NA,NA,NA,Coarse,No,None_none,Medium,No,None,Low,NA,not allelopathic,NA
+Aesculus flava,NA,NA,NA,NA,Coarse,No,Severe_high,Low,No,NA,NA,NA,allelopathic,NA
+Aesculus glabra,NA,NA,NA,NA,Coarse,No,Severe_high,Low,No,NA,Low,NA,allelopathic,NA
+Aesculus pavia,NA,NA,NA,NA,Coarse,No,Severe,Low,No,None,Low,NA,NA,NA
+Alnus serrulata,NA,NA,NA,NA,Coarse,No,None,Medium,No,NA,Low,NA,NA,NA
+Amelanchier arborea,NA,NA,NA,NA,Medium,No,None,Medium,Yes,None,Low,NA,NA,NA
+Amelanchier laevis,NA,NA,NA,NA,Medium,No,None,Medium,No,None,Low,NA,NA,NA
+Arbutus menziesii,NA,NA,NA,NA,Coarse,No,None,Low,No,None,Low,NA,NA,NA
+Baccharis halimifolia,NA,NA,NA,NA,Coarse,No,None,NA,No,None,NA,NA,NA,NA
+Betula alleghaniensis,NA,NA,NA,2.32E-02_2.76E-02_2.57E-02_2.50E-02_2.60E-02_2.00E-02_2.56E-02_2.23E-02_2.78E-02_2.87E-02_2.21E-02_2.86E-02_3.39E-02_3.33E-02_3.36E-02_2.90E-02_3.09E-02_2.58E-02_3.01E-02_3.00E-02_3.00E-02_3.17E-02_2.28E-02_3.29E-02_2.55E-02_2.69E-02_2.41E-02_4.02E-02_1.55E-02_3.10E-02_3.53E-02_2.97E-02_3.14E-02_2.48E-02_3.06E-02_2.65E-02,Medium,No,None_none,Medium,No,None,Low,NA,not allelopathic,NA
+Betula lenta,NA,NA,NA,NA,Medium,No,None_none,Medium,No,None,Low,NA,not allelopathic,NA
+Betula nigra,NA,NA,NA,NA,Medium,No,None_none,Medium,No,NA,NA,NA,not allelopathic,NA
+Betula papyrifera,NA,NA,NA,NA,Medium,No_no,None_none,High,No,NA,NA,NA,not allelopathic,NA
+Betula populifolia,NA,NA,NA,NA,Medium,No,None_none,Medium,No,NA,NA,NA,not allelopathic,NA
+Callicarpa americana,NA,NA,NA,NA,Medium,No,None,High,No,None,Low,NA,NA,NA
+Carpinus caroliniana,NA,NA,NA,NA,Medium,No,None_none,Low,No,NA,NA,NA,not allelopathic,NA
+Carya cordiformis,NA,NA,NA,NA,Coarse,No,None_none,Low,Yes,None,Low,NA,not allelopathic,NA
+Carya glabra,NA,NA,NA,NA,Coarse,No,None_none,Low,No,None,Low,NA,not allelopathic,NA
+Carya illinoinensis,NA,NA,NA,NA,Fine,No,None_none,Low,Yes,NA,Low,NA,allelopathic,NA
+Carya myristiciformis,NA,NA,NA,NA,Coarse,No,None,Low,No,NA,NA,NA,NA,NA
+Carya ovata,NA,NA,NA,NA,Coarse,No,None_none,Low,No,NA,Low,NA,allelopathic,NA
+Castanea dentata,NA,NA,NA,NA,Coarse,No,None_none,Low,Yes,Low,Low,NA,not allelopathic,NA
+Catalpa bignonioides,NA,NA,NA,NA,Coarse,No,None_none,Medium,No,None,Medium,NA,not allelopathic,NA
+Celastrus orbiculatus,NA,NA,NA,NA,Coarse,No,None,Low,No,NA,Low,NA,NA,NA
+Celtis laevigata,NA,NA,NA,NA,Medium,No,None_none,Low,No,None,NA,NA,not allelopathic,NA
+Cephalanthus occidentalis,NA,NA,NA,NA,Coarse,No,None,NA,No,None,Low,NA,NA,NA
+Cercis canadensis,NA,NA,NA,NA,Coarse,No,None_none,Low,No,NA,Low,NA,not allelopathic,NA
+Chamaecyparis thyoides,NA,NA,NA,NA,Medium,No,None_none,Low,No,None,NA,NA,not allelopathic,NA
+Cladrastis kentukea,NA,NA,NA,NA,Medium,No,None_none,NA,No,NA,NA,NA,not allelopathic,NA
+Cornus alternifolia,NA,NA,NA,NA,Medium,No,None,High,No,None,Low,NA,NA,NA
+Cornus amomum,NA,NA,NA,NA,Coarse,No,None,Low,No,NA,Low,NA,NA,NA
+Cornus drummondii,NA,NA,NA,NA,Medium,No,None,High,No,None,Low,NA,NA,NA
+Cornus florida,NA,NA,NA,NA,Coarse,No,None_none,Low,No,NA,Low,NA,not allelopathic,NA
+Cornus foemina,NA,NA,NA,NA,Fine,No,None,Medium,No,None,Low,NA,NA,NA
+Cornus racemosa,NA,NA,NA,NA,Coarse,No,None,Low,No,NA,Low,NA,NA,NA
+Corylus americana,NA,NA,NA,NA,Coarse,No,None,Medium,No,NA,Low,NA,NA,NA
+Corylus cornuta,NA,NA,NA,NA,Coarse_Coarse,No_No,None_None,High_Low,Yes_No,None_None,Low_Low,NA,NA,NA
+Crataegus crus-galli,NA,NA,NA,NA,Medium,No,None,Medium,No,None,Low,NA,NA,NA
+Crataegus phaenopyrum,NA,NA,NA,NA,Medium,No,None,Low,No,None,NA,NA,NA,NA
+Cyrilla racemiflora,NA,NA,NA,NA,Coarse_Medium,No_No,None,High_High,No_No,NA,Medium,NA,NA,NA
+Diospyros virginiana,NA,NA,NA,NA,Medium,No,None_none,NA,No,None,NA,NA,not allelopathic,NA
+Elaeagnus umbellata,NA,NA,NA,NA,Coarse,No,None,Medium,Yes,None,Low,NA,NA,NA
+Fagus grandifolia,NA,NA,NA,NA,Medium,No,None_none,Low,Yes,None,NA,NA,not allelopathic,NA
+Fraxinus americana,NULL,NA,NA,NA,Fine,No,None_none,Medium,No,None,NA,NA,not allelopathic,NA
+Fraxinus caroliniana,NA,NA,NA,NA,Coarse,No,None_none,Low,No,None,Low,NA,allelopathic,NA
+Fraxinus nigra,NA,NA,NA,NA,Coarse,No,None_none,Low,No,NA,Low,NA,allelopathic,NA
+Gaylussacia baccata,NA,NA,NA,NA,Medium,No,None,Medium,Yes,None,Low,NA,NA,NA
+Gleditsia triacanthos,NA,NA,NA,NA,Medium,No,None_none,Low,No,None,Low,NA,low allelopathic,NA
+Halesia carolina,NA,NA,NA,NA,Medium,No,None,Low,No,None,Low,NA,NA,NA
+Hamamelis virginiana,NA,NA,NA,NA,Coarse,No,None_none,Low,Yes,None,Medium,NA,not allelopathic,NA
+Hydrangea quercifolia,NA,NA,NA,NA,Coarse,No,None,NA,No,None,NA,NA,NA,NA
+Ilex cornuta,NA,NA,NA,NA,Coarse,No,None,Low,No,NA,Low,NA,NA,NA
+Ilex glabra,NA,NA,NA,NA,Coarse,No,None,Low,No,NA,Low,NA,NA,NA
+Ilex opaca,NA,NA,NA,NA,Coarse,No,None_none,Low,No,None,Low,NA,not allelopathic,NA
+Ilex verticillata,NA,NA,NA,NA,Coarse,No,None,Low,No,None,Low,NA,NA,NA
+Ilex vomitoria,NA,NA,NA,NA,Coarse,No,None,Low,No,None,Low,NA,NA,NA
+Juglans nigra,NA,NA,NA,NA,Medium,Yes,Slight_low,Low,Yes,None,Low,NA,allelopathic,NA
+Kalmia latifolia,NA,NA,NA,NA,Coarse,No,None,Low,No,NA,Low,NA,NA,NA
+Koelreuteria paniculata,NA,NA,NA,NA,Fine,No,None,NA,No,NA,NA,NA,NA,NA
+Lagerstroemia indica,NA,NA,NA,NA,Coarse,No,None,Low,No,None,Low,NA,NA,NA
+Leucothoe axillaris,NA,NA,NA,NA,Coarse,No,None,Medium,No,NA,Low,NA,NA,NA
+Ligustrum japonicum,NA,NA,NA,NA,Medium,No,Slight,Low,No,NA,Low,NA,NA,NA
+Lindera benzoin,NA,NA,NA,NA,Coarse,No,None,Medium,No,None,Low,7.65460134760394E-02,NA,NA
+Liquidambar styraciflua,NA,NA,NA,NA,Medium,No,None_none,Medium,No,None,NA,NA,not allelopathic,NA
+Liriodendron tulipifera,NA,NA,NA,NA,Medium,No,None_none,Low,No,None,NA,NA,not allelopathic,NA
+Lonicera involucrata,NA,NA,NA,NA,Medium,No,None,High,No,None,High,NA,NA,NA
+Lonicera japonica,NA,NA,NA,NA,Coarse,No,None,Medium,No,None,Low,NA,NA,NA
+Lonicera maackii,NA,NA,NA,NA,Coarse,No,None,Low,No,None,Low,NA,NA,NA
+Maclura pomifera,NA,NA,NA,NA,Coarse,No,None_none,Low,No,None,Low,NA,not allelopathic,NA
+Magnolia fraseri,NA,NA,NA,NA,Coarse,No,None_none,Low,No,None,NA,NA,not allelopathic,NA
+Magnolia grandiflora,NA,NA,NA,NA,Coarse,No,None_none,Low,No,NA,Low,NA,not allelopathic,NA
+Magnolia tripetala,NA,NA,NA,NA,Coarse,No,None,Medium,No,None,Medium,NA,NA,NA
+Magnolia virginiana,NA,NA,NA,NA,Medium,No,None_none,Low,No,None,NA,NA,not allelopathic,NA
+Malus sieboldii,NA,NA,NA,NA,Medium_Medium,No_No,None_None,Low_Medium,Yes_No,None,Medium_Low,NA,NA,NA
+Malus fusca,NA,NA,NA,NA,Coarse,No,NA,Low,Yes,NA,Low,NA,NA,NA
+Malus ioensis,NA,NA,NA,NA,Medium,No,None,High,No,None,Low,NA,NA,NA
+Morella cerifera,NA,NA,NA,NA,Coarse,No,None,Low,No,NA,Low,NA,NA,NA
+Morus alba,NA,NA,NA,NA,Medium,No,None,Low,No,None,NA,NA,NA,NA
+Morus rubra,NA,NA,NA,NA,Medium,No,None_none,Low,No,None,NA,NA,not allelopathic,NA
+Nandina domestica,NA,NA,NA,NA,Fine,No,None,Low,No,NA,Low,NA,NA,NA
+Nerium oleander,NA,NA,NA,NA,Coarse,No,Moderate,NA,No,None,NA,NA,NA,NA
+Nyssa aquatica,NA,NA,NA,NA,Coarse,No,None_none,Medium,No,None,NA,NA,not allelopathic,NA
+Nyssa sylvatica,NA,NA,NA,NA,Coarse_Coarse,No_No,None_None_none,Medium_Medium,No_No,None_None,NA,NA,not allelopathic,NA
+Ostrya virginiana,NA,NA,NA,NA,Medium,No,None_none,Medium,No,None,NA,NA,not allelopathic,NA
+Persea borbonia,NA,NA,NA,NA,Medium,No,None_none,NA,No,NA,NA,NA,not allelopathic,NA
+Phyllostachys aurea,NA,NA,NA,NA,Coarse,No,None,NA,No,None,NA,NA,NA,NA
+Pinus echinata,NA,NA,NA,NA,Medium,No,None_none,Low,No,NA,Low,NA,not allelopathic,NA
+Pinus radiata,NA,NA,NA,NA,Medium,No,None,NA,No,NA,NA,NA,NA,NA
+Pinus taeda,NA,NA,NA,NA,Medium,No,None_none,Low,No,NA,Low,NA,not allelopathic,NA
+Pinus virginiana,NA,NA,NA,NA,Coarse,No,None_none,Low,No,NA,Low,NA,not allelopathic,NA
+Platanus occidentalis,NA,NA,NA,NA,Coarse,No,None_none,Low,No,None,NA,NA,allelopathic,NA
+Populus deltoides,NA,NA,NA,NA,Medium,No,None_none,Medium,No,None,Low,NA,allelopathic,NA
+Populus fremontii,NA,NA,NA,NA,Medium,No,None,Low,No,NA,Low,NA,NA,NA
+Populus grandidentata,NA,NA,NA,NA,Medium,No_no,None_none,Medium,No,None,Low,NA,allelopathic,NA
+Populus tremuloides,NA,NA,NA,NA,Medium,No_no,None_none,High,No,None,Medium,NA,allelopathic,NA
+Prunus americana,NA,NA,NA,NA,Medium,No,Slight_low,Medium,Yes,None,Low,NA,not allelopathic,NA
+Prunus maritima,NA,NA,NA,NA,Coarse,No,None,Medium,Yes,NA,Low,NA,NA,NA
+Prunus pensylvanica,NA,NA,NA,NA,Medium,No,Moderate_medium,Medium,Yes,None,NA,NA,not allelopathic,NA
+Ptelea trifoliata,NA,NA,NA,NA,Medium,No,None_none,Low,No,NA,Low,NA,not allelopathic,NA
+Pyrus calleryana,NA,NA,NA,NA,Medium,No,Severe,Low,No,None,Low,NA,NA,NA
+Quercus agrifolia,NA,NA,NA,NA,Medium,No,None,Medium,No,None,NA,NA,NA,NA
+Quercus alba,NA,NA,NA,NA,Medium,No,None_none,Medium,No,None,NA,NA,allelopathic,NA
+Quercus bicolor,NA,NA,NA,NA,Medium,No,None_none,Medium,No,None,NA,NA,not allelopathic,NA
+Quercus coccinea,NA,NA,NA,NA,Medium,No,None_none,Medium,No,None,NA,NA,not allelopathic,NA
+Quercus falcata,NA,NA,NA,NA,Coarse,No,None,Low,No,None,Low,NA,NA,NA
+Quercus imbricaria,NA,NA,NA,NA,Medium,No,None_none,High,No,None,Low,NA,not allelopathic,NA
+Quercus laevis,NA,NA,NA,NA,Medium,No,None_none,High,No,None,NA,NA,not allelopathic,NA
+Quercus laurifolia,NA,NA,NA,NA,Medium,No,None_none,High,No,None,NA,NA,not allelopathic,NA
+Quercus lyrata,NA,NA,NA,NA,Medium,No,None_none,Medium,No,None,NA,NA,not allelopathic,NA
+Quercus macrocarpa,NA,NA,NA,NA,Medium,No,None_none,Medium,No,None,NA,NA,not allelopathic,NA
+Quercus marilandica,NULL,NA,NA,NA,Coarse,No,None_none,Medium,No,None,Low,NA,allelopathic,NA
+Quercus michauxii,NA,NA,NA,NA,Medium_Coarse,No_No,None_None_none_none,Medium_Low,No_No,None,NA,NA,allelopathic_not allelopathic,NA
+Quercus nigra,NA,NA,NA,NA,Medium,No,None_none,Low,No,None,NA,NA,not allelopathic,NA
+Quercus pagoda,NA,NA,NA,NA,Medium,No,None,Medium,No,None,NA,NA,NA,NA
+Quercus palustris,NA,NA,NA,NA,Medium,No,None_none,Low,No,None,NA,NA,not allelopathic,NA
+Quercus phellos,NA,NA,NA,NA,Fine,No,None_none,High,No,None,NA,NA,not allelopathic,NA
+Quercus shumardii,NA,NA,NA,NA,Medium,No,None_none,Low,No,None,Low,NA,allelopathic,NA
+Quercus stellata,NA,NA,NA,NA,Coarse,No,None_none,Low,No,NA,Low,NA,allelopathic,NA
+Quercus texana,NA,NA,NA,NA,Medium,No,None_none,Medium,No,None,NA,NA,not allelopathic,NA
+Quercus velutina,NA,NA,NA,NA,Medium,No,None_none,Medium,No,None,NA,NA,not allelopathic,NA
+Quercus virginiana,NA,NA,NA,NA,Medium,No,None_none,Low,No,None,NA,NA,not allelopathic,NA
+Rhododendron atlanticum,NA,NA,NA,NA,Medium,No,None,Medium,No,None,NA,NA,NA,NA
+Rhododendron canescens,NA,NA,NA,NA,Coarse,No,Slight,Low,No,None,Low,NA,NA,NA
+Rhododendron maximum,NA,NA,NA,NA,Coarse,Yes,Moderate,NA,No,None,NA,NA,NA,NA
+Rhus copallinum,NA,NA,NA,NA,Coarse,No,None,Low,No,None,Low,NA,NA,NA
+Rhus glabra,NA,NA,NA,NA,Coarse,No,None,Low,No,None,Low,NA,NA,NA
+Rosa acicularis,NA,NA,NA,NA,Fine,No,None,High,Yes,None,High,NA,NA,NA
+Salix discolor,NA,NA,NA,NA,Coarse,No,None,Medium,No,NA,NA,NA,NA,NA
+Salix lucida,NA,NA,NA,NA,Coarse_Medium,No_No,None_None,Medium_Medium,No_Yes,None_None,Low_Low,NA,NA,NA
+Salix nigra,NA,NA,NA,NA,Medium,No,None_none,Low,No,None,Low,NA,not allelopathic,NA
+Sorbus americana,NA,NA,NA,NA,Fine,No,None_none,High,No,None,Low,NA,not allelopathic,NA
+Spiraea prunifolia,NA,NA,NA,NA,Fine,No,None,Low,No,None,NA,NA,NA,NA
+Styrax grandifolius,NA,NA,NA,NA,Medium,No,None,NA,No,NA,NA,NA,NA,NA
+Thuja occidentalis,NA,NA,NA,NA,Fine,No,None_none,Medium,No,None,Low,NA,not allelopathic,NA
+Tilia americana,NA,NA,NA,NA,Medium,No,None_none_none,Medium,No,None,NA,7.37671152970412E-02,allelopathic_not allelopathic,NA
+Tsuga canadensis,NA,NA,NA,NA,Fine,No,None_none,Medium,No,None,NA,NA,low allelopathic,NA
+Tsuga caroliniana,NA,NA,NA,NA,Fine,No,None_none,Medium,No,None,NA,NA,not allelopathic,NA
+Ulmus alata,NA,NA,NA,NA,Coarse,No,None_none,Low,No,NA,Low,NA,not allelopathic,NA
+Ulmus americana,NA,NA,NA,NA,Coarse,No,None_none,Low,No,None,NA,8.52616486738062E-02,allelopathic,NA
+Ulmus pumila,NA,NA,NA,NA,Medium,No,None,Low,No,None,NA,NA,NA,NA
+Ulmus rubra,NA,NA,NA,NA,Coarse,No,None_none,Low,No,None,Low,NA,not allelopathic,NA
+Vaccinium corymbosum,NA,NA,NA,NA,Medium,No,None,Medium,Yes,None,Low,NA,NA,NA
+Vaccinium stamineum,NA,NA,NA,NA,Medium,No,None,Medium,No,None,Medium,NA,NA,NA
+Viburnum acerifolium,NA,NA,NA,NA,Medium,No,None,Medium,No,None,Low,NA,NA,NA
+Viburnum lentago,NA,NA,NA,NA,Coarse,No,None,Low,No,None,Low,NA,NA,NA
+Viburnum opulus var. americanum,NA,NA,NA,NA,Coarse,No,None,Low,No,None,Low,NA,NA,NA
+Viburnum prunifolium,NA,NA,NA,NA,Medium,No,None,Medium,No,None,Low,NA,NA,NA
+Zelkova serrata,NA,NA,NA,NA,Fine,No,None,Low,No,NA,Low,NA,NA,NA
+Acer leucoderme,NA,NA,NA,NA,NA,NA,none,NA,NA,NA,NA,NA,not allelopathic,NA
+Eriobotrya japonica,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,7.35076467686236E-02
+Cornus macrophylla,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,9.69073716513351E-02
