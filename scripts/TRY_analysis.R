@@ -11,13 +11,13 @@ summer_taxa <- read_csv('data/summer2022/taxa_2022-12-02.csv')
 
 summer_arths <- read_csv('data/summer2022/foliage_arths_2022-12-02.csv') %>% 
   left_join(
-    taxa %>% 
+    summer_taxa %>% 
       select(TaxonID, family),
     by = 'TaxonID')
 
-surveytrees <- surveys %>% 
+surveytrees <- summer_surveys %>% 
   left_join(
-    trees,
+   summer_trees,
     by = c('TreeFK' = 'TreeID'))
 
 try_traits <- read_csv('data/TRY/all/TRY_means.csv') %>% 
@@ -119,7 +119,7 @@ summer_species <- surveytrees %>%
 summer_traits <- surveytrees %>% 
   filter(Species %in% summer_species) %>% 
   left_join(
-    arths,
+    summer_arths,
     by = c('BeatSheetID' = 'BeatSheetFK'),
     multiple = "all") %>%
   group_by(TreeFK, BeatSheetID) %>% 
@@ -130,7 +130,7 @@ summer_traits <- surveytrees %>%
     surveytrees %>% 
       filter(Species %in% summer_species) %>% 
       left_join(
-        arths,
+        summer_arths,
         by = c('BeatSheetID' = 'BeatSheetFK'),
         multiple = "all") %>% 
       group_by(TreeFK) %>% 
@@ -138,7 +138,7 @@ summer_traits <- surveytrees %>%
     by = 'TreeFK') %>% 
   # join back in tree info
   left_join(
-    trees,
+    summer_trees,
     by = c('TreeFK' = 'TreeID')) %>% 
   group_by(Species) %>% 
   summarize(
