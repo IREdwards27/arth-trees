@@ -1,3 +1,5 @@
+# analyze and visualize differences in arthropod abundance and diversity from Caterpillars Count! across tree species
+
 # setup -------------------------------------------------------------------
 
 library(tidyverse)
@@ -123,15 +125,15 @@ getSamples <- function(){
 sampled_trees <- replicate(100, getSamples(), simplify = F) %>% 
   bind_rows()
 
+# conduct an ANOVA to identify differences in the mean number of orders observed per survey on chose plant species
 div_anova <- aov(
   mean_n_orders ~ sciName,
   data = sampled_trees)
 
+# identify species with significantly different diversity 
 TukeyHSD(div_anova)
 
-# use the data generated above to run an ANOVA - each species summary statistics from a given sample is treated as an individual observation
-# ANOVA not necessary - go directly to comparison - Tukey's works, but are several functions (explore)
-
+# generate a data frame with the mean estimated biomass of arthropods per survey across tree species
 mass_stats <- all_surveys %>% 
   filter(sciName %in% focal_spp) %>% 
   group_by(PlantFK, sciName) %>% 
@@ -140,6 +142,7 @@ mass_stats <- all_surveys %>%
     mean_survey_mass = mean(survey_mass, na.rm = T)) %>% 
   filter(n_surveys > 9)
 
+# similar to above analyses but for biomass
 mass_anova <- aov(
   log(mean_survey_mass) ~ sciName,
   data = mass_stats)
@@ -149,8 +152,7 @@ TukeyHSD(mass_anova)
 
 # plotting ----------------------------------------------------------------
 
-# ggbreak may be worth using for the final version of this plot - those outliers could use some assessment, too, though
-
+# plot the mean biomass per survey on plants of each species as a boxplot
 ggplot(mass_stats) + 
   geom_boxplot(
     mapping = aes(
