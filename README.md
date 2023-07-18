@@ -1,5 +1,7 @@
 # arth-trees
 
+This project focused on identifying differences in arthropod abundance and diversity across several common tree species in central NC.
+
 data/
 
 CC_fullDataset_2022-11-30.csv: Compiled data from Caterpillars Count! (CC) surveys, updated 2022-11-30.
