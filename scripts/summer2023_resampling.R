@@ -3,6 +3,7 @@
 
 library(tidyverse)
 
+# read in necessary data
 surveys <- read_csv('data/summer2022/beat_sheets_2022-12-02.csv')
 
 trees <- read_csv('data/summer2022/trees_2022-08-16.csv')
@@ -10,11 +11,13 @@ trees <- read_csv('data/summer2022/trees_2022-08-16.csv')
 taxa <- read_csv('data/summer2022/taxa_2022-12-02.csv')
 
 arths <- read_csv('data/summer2022/foliage_arths_2022-12-02.csv') %>% 
+  # join taxonomic information to arthropod observations
   left_join(
     taxa %>% 
       select(TaxonID, family),
     by = 'TaxonID')
 
+# combine tree and survey information into a single data frame
 surveytrees <- surveys %>% 
   left_join(
     trees,
@@ -23,7 +26,7 @@ surveytrees <- surveys %>%
 
 # sample checking ---------------------------------------------------------
 
-# generate a list of the tree species over the summer with 5 or more branches
+# generate a list of the tree species sampled in summer 2022 with 5 or more branches sampled
 focal_species <- surveytrees %>% 
   group_by(Species) %>% 
   summarize(
@@ -36,6 +39,7 @@ focal_species <- surveytrees %>%
 
 # resampling --------------------------------------------------------------
 
+# create a function to generate a random sample of 6 trees from a list
 sampleBranches <- function(){
   sheets <- map(
     .x = focal_species,
@@ -68,14 +72,14 @@ div_stats <- replicate(100, sampleBranches(), simplify = F) %>%
   # glue all the sample summaries together
   bind_rows()
 
-# run an ANOVA - each branch is treated as a sample, 
-
+# run an ANOVA - each branch is treated as a sample for a given species
 div_anova <- aov(
   n_families ~ Species,
   data = div_stats)
 
 TukeyHSD(div_anova)
 
+# calculate mean biomass per survey for all sampled tree species
 biomass_raw <- surveytrees %>% 
   # pull out the surveys on branches from the chosen sample
   filter(Species %in% focal_species) %>% 
@@ -92,6 +96,7 @@ biomass_raw <- surveytrees %>%
     trees,
     by = c('TreeFK' = 'TreeID'))
 
+# create a data frame with mean survey biomass and species for each tree
 biomass_stats <- surveytrees %>% 
   # pull out the surveys on branches from the chosen sample
   filter(Species %in% focal_species) %>% 

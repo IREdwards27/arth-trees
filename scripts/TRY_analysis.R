@@ -115,7 +115,7 @@ summer_species <- surveytrees %>%
 
 # summer analysis --------------------------------------------------------------
 
-
+# create a dataframe with arthropod abundance and diversity traits by tree species, along with traits of that species retrieved from TRY
 summer_traits <- surveytrees %>% 
   filter(Species %in% summer_species) %>% 
   left_join(
@@ -170,6 +170,7 @@ ggplot(summer_traits) +
 
 # cc analysis -------------------------------------------------------------
 
+# see cc_resampling for an in-depth explanation of these steps.
 getSamples <- function(){
   
   sample_surveys <- map(
